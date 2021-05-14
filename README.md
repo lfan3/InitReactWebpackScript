@@ -17,6 +17,12 @@ my-project/
         router.js  
         package.json  
 
+my-project
++-- _config.yml
++-- _drafts
+|   +-- begin-with-the-crazy-ideas.textile
+|   +-- on-simplicity-in-technology.markdown
++-- _includes
 ## package installed in the frontend part
 webpack related   
 
