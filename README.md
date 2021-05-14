@@ -7,18 +7,18 @@ automatisation the job to create a light and quick starting project with React a
 Every React with webpack project have some must to have package, so I write a shell script to make the work done automatically
 
 ## directory structure of the new created project
-my-project/
-    Frontend/
-        package.json
-        webpack.config.js
-    Backend/
-        app/
-        index.js
-        router.js
-        package.json
+my-project/  
+    Frontend/   
+        package.json   
+        webpack.config.js   
+    Backend/   
+        app/  
+        index.js  
+        router.js  
+        package.json  
 
 ## package installed in the frontend part
-webpack related 
+webpack related   
     * webpack 
     * webpack-cli 
     * webpack-dev-server 
@@ -33,32 +33,32 @@ babel related
     * @babel/preset-env 
     * @babel/preset-react babel-loader
 
-REACT 
+REACT   
     * prop-types 
     * react 
     * react-dom 
     * react-router-dom
 
-icons 
+icons   
     * @fortawesome/fontawesome-svg-core 
     * @fortawesome/free-solid-svg-icons 
     * @fortawesome/react-fontawesome
 
-style 
+style   
     * bootstrap 
     * react-bootstrap
 
 ## package installed in the backend part
-EXPRESS\
+EXPRESS  
     * express 
     * express-form-data 
     * express-session
-MYSQL 
+MYSQL   
     * mysql2
-BYCRYPT 
+BYCRYPT   
     * bcrypt
-UUID 
+UUID   
     * uuid
-PARSER 
+PARSER   
     * body-parser
 
