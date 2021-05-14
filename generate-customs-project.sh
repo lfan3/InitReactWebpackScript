@@ -8,8 +8,7 @@ F_DEV_DEPENDENCIES="${WEBPACK} ${BABEL}"
 ICONS="@fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome"
 STYLE="bootstrap react-bootstrap"
 REACT="prop-types react react-dom react-router-dom"
-SOCKET="socket.io-client"
-F_DEPENDENCIES="${ICONS} ${STYLE} ${REACT} ${SOCKET}"
+F_DEPENDENCIES="${ICONS} ${STYLE} ${REACT}"
 
 ## BACKEND PACKAGE
 TYPESCRIPT="@types/express @types/node typescript"
@@ -18,11 +17,10 @@ B_DEV_DEPENDENCIES="${TYPESCRIPT} ${TOOL}"
 
 EXPRESS="express express-form-data express-session"
 MYSQL="mysql2"
-SOCKET="socket.io"
 BYCRYPT="bcrypt"
 UUID="uuid"
 PARSER="body-parser"
-B_DEPENDENCIES="${BYCRYPT} ${UUID} ${PARSER} ${EXPRESS} ${MYSQL} ${SOCKET}"
+B_DEPENDENCIES="${BYCRYPT} ${UUID} ${PARSER} ${EXPRESS} ${MYSQL}"
 
 #not forget the $ when we want to use MY_PROJECT
 read -p "What is the project name?
@@ -30,24 +28,26 @@ read -p "What is the project name?
 
 mkdir $MY_PROJECT && cd $MY_PROJECT && mkdir Frontend && mkdir Backend
 git init
-
-# Frontend
-cd Frontend
+# config webpack
+cd ..
+cp webpack.config.js $MY_PROJECT/Frontend/ && cd $MY_PROJECT/Frontend/
+echo "which port you want to use for Front?"
+read portF
+sed -i "s/PORT/$portF/" webpack.config.js
+# init npm
 npm init -y
-#yarn add $F_DEV_DEPENDENCIES $F_DEPENDENCIES --dev
+yarn add $F_DEV_DEPENDENCIES $F_DEPENDENCIES --dev
 
 # Backend
 cd ../Backend
 npm init -y
-#yarn add $B_DEV_DEPENDENCIES $B_DEPENDENCIES --dev
+touch router.js && mkdir app
+yarn add $B_DEV_DEPENDENCIES $B_DEPENDENCIES --dev
+echo "which port you want to use for Back?"
+read portB
+cp ../../server.js index.js
+sed -i "s/PORT/$portB/" index.js
 
-cd ../..
-cp webpack.config.js $MY_PROJECT/Frontend/ && cd $MY_PROJECT/Frontend/
 
-# webpack config
-echo "which port you want to use?"
-read port
 
-#sed -i webpack.config.js -e "s/${port}/$PORT/" 
-sed -i "s/PORT/$port/" webpack.config.js
 
