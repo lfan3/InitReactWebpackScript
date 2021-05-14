@@ -7,6 +7,8 @@ automatisation the job to create a light and quick starting project with React a
 Every React with webpack project have some must to have package, so I write a shell script to make the work done automatically
 
 ## directory structure of the new created project
+
+```
 my-project/  
     Frontend/   
         package.json   
@@ -16,13 +18,9 @@ my-project/
         index.js  
         router.js  
         package.json  
+```
 
-my-project
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
+
 ## package installed in the frontend part
 webpack related   
 
