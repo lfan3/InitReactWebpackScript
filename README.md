@@ -22,6 +22,8 @@ my-project/
 
 
 ## package installed in the frontend part
+
+```
 webpack related   
      webpack 
      webpack-cli 
@@ -51,8 +53,10 @@ icons
 style   
      bootstrap 
      react-bootstrap
+```
 
 ## package installed in the backend part
+```
 EXPRESS  
      express 
      express-form-data 
@@ -65,4 +69,5 @@ UUID
      uuid
 PARSER   
      body-parser
+```
 
