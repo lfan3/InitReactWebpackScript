@@ -18,7 +18,7 @@ my-project/
         package.json
 
 ## package installed in the frontend part
-webpack related
+webpack related 
     * webpack 
     * webpack-cli 
     * webpack-dev-server 
@@ -27,38 +27,38 @@ webpack related
     * @babel/plugin-proposal-class-properties 
     * file-loader
 
-babel related
+babel related 
     * @babel/core 
     * @babel/polyfill 
     * @babel/preset-env 
     * @babel/preset-react babel-loader
 
-REACT
+REACT 
     * prop-types 
     * react 
     * react-dom 
     * react-router-dom
 
-icons:
+icons 
     * @fortawesome/fontawesome-svg-core 
     * @fortawesome/free-solid-svg-icons 
     * @fortawesome/react-fontawesome
 
-style:
+style 
     * bootstrap 
     * react-bootstrap
 
 ## package installed in the backend part
-EXPRESS
+EXPRESS 
     * express 
     * express-form-data 
     * express-session
-MYSQL
+MYSQL 
     * mysql2
-BYCRYPT
+BYCRYPT 
     * bcrypt
-UUID
+UUID 
     * uuid
-PARSER
+PARSER 
     * body-parser
 
