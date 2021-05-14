@@ -37,6 +37,9 @@ sed -i "s/PORT/$portF/" webpack.config.js
 # init npm
 npm init -y
 yarn add $F_DEV_DEPENDENCIES $F_DEPENDENCIES --dev
+# app 
+mkdir app && cp ../../index.html app/
+
 
 # Backend
 cd ../Backend
