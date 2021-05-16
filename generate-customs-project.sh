@@ -1,7 +1,7 @@
 #!/bin/sh
 # GLOBAL VARIALBE
 ## FRONTEND PACKAGES$
-WEBPACK="webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin @babel/plugin-proposal-class-properties file-loader"
+WEBPACK="webpack webpack-cli webpack-dev-server style-loader css-loader html-webpack-plugin @babel/plugin-proposal-class-properties file-loader"
 BABEL="@babel/core @babel/polyfill @babel/preset-env @babel/preset-react babel-loader"
 F_DEV_DEPENDENCIES="${WEBPACK} ${BABEL}"
 

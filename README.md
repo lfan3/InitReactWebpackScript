@@ -25,49 +25,50 @@ my-project/
 
 ```
 webpack related   
-     webpack 
-     webpack-cli 
-     webpack-dev-server 
-     css-loader 
-     html-webpack-plugin 
-     @babel/plugin-proposal-class-properties 
-     file-loader
+    webpack 
+    webpack-cli 
+    webpack-dev-server 
+    css-loader 
+    html-webpack-plugin 
+    @babel/plugin-proposal-class-properties 
+    file-loader
 
 babel related 
-     @babel/core 
-     @babel/polyfill 
-     @babel/preset-env 
-     @babel/preset-react babel-loader
+    @babel/core 
+    @babel/polyfill 
+    @babel/preset-env 
+    @babel/preset-react babel-loader
 
 REACT   
-     prop-types 
-     react 
-     react-dom 
-     react-router-dom
+    prop-types 
+    react 
+    react-dom 
+    react-router-dom
 
 icons   
-     @fortawesome/fontawesome-svg-core 
-     @fortawesome/free-solid-svg-icons 
-     @fortawesome/react-fontawesome
+    @fortawesome/fontawesome-svg-core 
+    @fortawesome/free-solid-svg-icons 
+    @fortawesome/react-fontawesome
 
 style   
-     bootstrap 
-     react-bootstrap
+    bootstrap 
+    react-bootstrap
 ```
 
 ## package installed in the backend part
+
 ```
 EXPRESS  
-     express 
-     express-form-data 
-     express-session
+    express 
+    express-form-data 
+    express-session
 MYSQL   
-     mysql2
+    mysql2
 BYCRYPT   
-     bcrypt
+    bcrypt
 UUID   
-     uuid
+    uuid
 PARSER   
-     body-parser
+    body-parser
 ```
 
